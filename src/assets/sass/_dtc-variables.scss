@@ -1,0 +1,66 @@
+//************************************************************************
+//***  AUTOR.: Renato F Santos
+//***  DATA..: 29.06.2019
+//***  VERSÃO: 1.0 - DATA: 29.06.2019
+//************************************************************************
+
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: ($spacer * .25),    //4px
+    2: ($spacer * .5),     //8px
+    3: $spacer,            //16px
+    4: ($spacer * 1.5),    //24px
+    5: ($spacer * 3),      //48px
+    6: ($spacer * 4),      //64px
+    7: ($spacer * 5),      //80px
+    8: ($spacer * 6.25),   //100px
+    9: ($spacer * 7.5),    //120px
+    10: ($spacer * 9.375)  //150px
+  ),
+  $spacers);
+
+$primary-color:                   #51cbce !default;
+$second-color:                    #C76416 !default;
+$primary-states-color:            darken($primary-color, 10%) !default;
+
+$dtc-font-color-menu:             #000000;
+$dtc-font-color:                  #000000;
+$dtc-font-size-base:              14px;
+$dtc-font-weight-light:           300 !default;
+
+$dtc-font-h1:                     18em;
+$font-size-h1:                     3.6em !default;
+$font-size-h2:                     2.8em !default;
+$font-size-h3:                     1.825em !default;
+$font-size-h4:                     1.6em !default;
+$font-size-h5:                     1.35em !default;
+$font-size-h6:                     1.25em !default;
+$font-size-h7:                     0.9em !default;
+$font-paragraph:                  15px !default;
+$font-size-navbar:                14px !default;
+
+$grid-columns:      12;
+$grid-gutter-width: 30px;
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 576px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px
+);
